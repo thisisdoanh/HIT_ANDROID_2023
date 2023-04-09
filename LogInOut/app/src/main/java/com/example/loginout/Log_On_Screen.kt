@@ -11,12 +11,13 @@ import com.example.loginout.ListAccount.Companion.listAccount
 class Log_On_Screen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
 
-        val edtAccount = findViewById<EditText>(R.id.edtAccount)
-        val edtPass = findViewById<EditText>(R.id.edtPass)
+
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_log_on_screen)
 
+        val edtAccount = findViewById<EditText>(R.id.edtAccount)
+        val edtPass = findViewById<EditText>(R.id.edtPass)
         val btnLogOn = findViewById<Button>(R.id.btnLogOn)
         val btnLogIn = findViewById<Button>(R.id.btnLogIn)
 
