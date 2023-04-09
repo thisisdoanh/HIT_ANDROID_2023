@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:viewBindingIgnore="true"
+    tools:context=".Log_On_Screen">
+
+
+    <TextView
+        android:id="@+id/txtAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tài khoản:"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginLeft="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtAccount"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_marginHorizontal="60dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="18dp"
+        android:hint="Nhập tài khoản"
+        app:layout_constraintTop_toBottomOf="@id/txtAccount"
+        app:layout_constraintLeft_toLeftOf="@id/txtAccount"
+        tools:layout_editor_absoluteX="60dp"
+        tools:layout_editor_absoluteY="247dp" />
+
+    <TextView
+        android:id="@+id/txtPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Mật khẩu:"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/txtAccount"
+        app:layout_constraintTop_toBottomOf="@id/edtAccount" />
+
+    <EditText
+        android:id="@+id/edtPass"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_marginHorizontal="60dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textSize="18dp"
+        android:hint="Nhập mật khẩu"
+        app:layout_constraintLeft_toLeftOf="@id/txtAccount"
+        app:layout_constraintTop_toBottomOf="@id/txtPass" />
+
+    <TextView
+        android:id="@+id/txtRepeatPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Nhập lại mật khẩu:"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/txtAccount"
+        app:layout_constraintTop_toBottomOf="@id/edtPass" />
+
+    <EditText
+        android:id="@+id/edtRepeatPass"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_marginHorizontal="60dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textSize="18dp"
+        android:hint="Nhập lại mật khẩu"
+        app:layout_constraintLeft_toLeftOf="@id/txtAccount"
+        app:layout_constraintTop_toBottomOf="@id/txtRepeatPass" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+
+        app:layout_constraintTop_toBottomOf="@id/edtRepeatPass">
+
+        <Button
+            android:id="@+id/btnLogIn"
+            android:layout_gravity="center"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFE"
+            android:text="Đăng kí"
+            android:textColor="@color/black"></Button>
+
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
